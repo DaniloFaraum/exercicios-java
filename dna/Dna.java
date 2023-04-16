@@ -1,39 +1,20 @@
 public class Dna{
-    public static boolean divideByThree(String dna){
-            int dnaLength = dna.length();
-            if(dnaLength % 3 == 0){
-                return true;
-            }
-            else{
-                return false;
-            }
+        public static boolean divideByThree(String dna){
+            return dna.length() % 3 == 0;
         }
 
         public static boolean startWith(String dna){
-            if(dna.indexOf("ATG") == 0){
-                return true;
-            }
-            else{
-                return false;
-            }
+            return dna.indexOf("ATG") == 0;
         }
 
         public static boolean endWith(String dna){
-            if(dna.indexOf("TGA") == dna.length()-3){
-                return true;
-            }
-            else{
-                return false;
-            }
+            return dna.indexOf("TGA") == dna.length()-3;
         }
 
         public static String protein(String dna){
-            String dnaProtein;
+            String dnaProtein = "Sem proteina";
             if(divideByThree(dna) && startWith(dna) && endWith(dna)){
                 dnaProtein = dna.substring(3, dna.indexOf("TGA"));
-            }
-            else{
-                dnaProtein = "Sem proteina";
             }
             return dnaProtein;
         }
