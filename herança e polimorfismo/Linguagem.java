@@ -1,8 +1,8 @@
 public class Linguagem{
-    private String nome;
-    private int numFalantes;
-    private String regioesFaladas;
-    private String ordemDasPalavras;
+    protected String nome;
+    protected int numFalantes;
+    protected String regioesFaladas;
+    protected String ordemDasPalavras;
 
     public Linguagem(String nome, int numFalantes, String regioesFaladas, String ordemDasPalavras){
         this.nome = nome;
@@ -11,12 +11,6 @@ public class Linguagem{
         this.ordemDasPalavras = ordemDasPalavras;
     }
 
-    public String getNome() { return nome; }
-    public int getNumFalantes() { return numFalantes; }
-    public String getOrdemDasPalavras() { return ordemDasPalavras; }
-    public String getRegioesFaladas() { return regioesFaladas; }
-    public void setOrdemDasPalavras(String ordemDasPalavras) { this.ordemDasPalavras = ordemDasPalavras; }
-    
     public void getInfo(){
         System.out.println(nome+" é falado por "+numFalantes+" pessoas principalmente em "+regioesFaladas+".");
         System.out.println("A linguagem segue a ordem das palavras: "+ordemDasPalavras);

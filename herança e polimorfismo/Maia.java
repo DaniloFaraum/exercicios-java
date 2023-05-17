@@ -5,9 +5,9 @@ public class Maia extends Linguagem{
 
     @Override
     public void getInfo(){
-        System.out.println(getNome()+" é falado por "+getNumFalantes()+" pessoas principalmente em "+getRegioesFaladas()+".");
-        System.out.println("A linguagem segue a ordem das palavras: "+getOrdemDasPalavras());
-        System.out.println("Fato interessante: " +getNome()+ " é uma língua ergativa.");
+        System.out.println(nome+" é falado por "+numFalantes+" pessoas principalmente em "+regioesFaladas+".");
+        System.out.println("A linguagem segue a ordem das palavras: "+ordemDasPalavras);
+        System.out.println("Fato interessante: "+nome+" é uma língua ergativa.");
     }
 
 }
