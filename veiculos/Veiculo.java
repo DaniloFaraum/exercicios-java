@@ -1,7 +1,5 @@
 import java.lang.reflect.Field;
-import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class Veiculo {
     protected String placa;
