@@ -1,5 +1,3 @@
-import sun.util.locale.provider.LocaleServiceProviderPool;
-
 import java.util.Scanner;
 
 public class Motor {
